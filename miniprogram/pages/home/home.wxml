@@ -1,0 +1,42 @@
+<view class="home">
+  <view class="search">
+    <input type="text" bindfocus="goSearchPage" placeholder="请输入关键字" confirm-type='send'/>
+    <view class="text">搜索</view>
+  </view>
+  <view class="banner">
+    <swiper class="swiper" indicator-dots='ture' autoplay indicator-color='white' indicator-active-color="#1afa29">
+      <swiper-item class="swiper-item" wx:for="{{bannerList}}" wx:key='index'>
+        <image src="{{item.image_src}}"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="classification-box"  style="height:{{height+'rpx'}}">
+      <view wx:for="{{typeList}}" bindtap="jumpTabar" data-index="{{index}}" wx:key="index" class="classification">
+        <image src="{{item.children[0].children[0].cat_icon}}"></image>
+        <text>{{item.cat_name}}</text>
+      </view>
+    </view>
+        <view class="down">
+          <image bindtap="showAlltype" src="{{isshowAlltype?'../../images/up.png':'../../images/down.png'}}"></image>
+        </view>
+  <view class="text">
+      商品列表
+  </view>
+  <view class="commodity-box">
+    <view class="commodity" bindtap="jumpDetail" data-id="{{item.goods_id}}" wx:for="{{goodsList}}" wx:key="index">
+      <view class="commodity-img">
+        <image src="{{item.goods_big_logo}}"></image>
+      </view>
+      <view class="commodity-content">
+        <view class="explain">{{item.goods_name}}</view>
+        <!-- <view class="region">广州</view> -->
+        <view class="price-cart">
+          <view class="price">￥{{item.goods_price}}</view>
+          <view class="Cart-box" >
+            <image src="../../images/cart-active.png"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

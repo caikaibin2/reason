@@ -1,0 +1,15 @@
+<view class="search-box">
+  <view class="search">
+    <input type="text" value="{{value}}" bindinput='changevalue' placeholder="请输入关键字" confirm-type='send'/>
+    <view class="text" catchtap="search">搜索</view>
+  </view>
+  <view class="historyTexts" wx:if="{{historySearchs.length!=0}}">历史搜索</view>
+  <view class="historySearchs-box">
+    <view class="historySearchs" wx:for="{{historySearchs}}" wx:key="index">
+      <view class="name" bindtap="search" data-index="{{index}}">{{item}}</view>
+      <view class="delete" bindtap="deletes" data-index="{{index}}">X</view>
+    </view>
+  
+  </view>
+  
+</view>

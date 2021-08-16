@@ -1,0 +1,22 @@
+<view class="searchlist">
+  <view class="searchlist-box">
+    <view class="commodity-box">
+    <view class="commodity"  wx:for="{{commodityList}}" wx:key="index" >
+      <view class="commodity-img" bindtap="jumpDetail" data-id="{{item.goods_id}}">
+        <image src="{{item.goods_big_logo}}"></image>
+      </view>
+      <view class="commodity-content">
+        <view class="explain">{{item.goods_name}}</view>
+        <!-- <view class="region">广州</view> -->
+        <view class="price-cart">
+          <view class="price">￥{{item.goods_price}}</view>
+          <view class="Cart-box" wx:if="{{state==1}}" >
+            <!-- <image src="../../images/cart-active.png"></image> -->
+            <image src="../../images/delete.png" data-id="{{item.goods_id}}" bindtap="deletes"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  </view>
+</view>

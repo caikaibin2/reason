@@ -1,0 +1,230 @@
+.order {
+  .cart-box {
+    width: 96vw;
+    margin: 0 auto;
+
+    .address-box {
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 20rpx;
+      height: 250rpx;
+      background-color: #d9dde0;
+      padding: 28rpx;
+      border-radius: 20rpx;
+
+      .text {
+        font-size: 38rpx;
+
+      }
+
+      .addressInfo {
+        height: 180rpx;
+        width: 100%;
+        margin-top: 40rpx;
+        .name-phone {
+          display: flex;
+
+          .name {
+            color: rgb(255, 126, 61);
+          }
+
+          .phone {
+            margin-left: 40rpx;
+            color: #828282;
+          }
+        }
+
+        .address {
+          color: #828282;
+          margin-top: 40rpx;
+        }
+      }
+    }
+
+    .commodity-box {
+      width: 100%;
+      background-color: white;
+      margin-top: 40rpx;
+      padding-bottom: 100rpx;
+
+      .commodity {
+        display: flex;
+        margin-left: 40rpx;
+        margin-top: 40rpx;
+
+        .commodity-img {
+          width: 200rpx;
+          height: 200rpx;
+
+          image {
+            width: 100%;
+            height: 200rpx;
+          }
+        }
+
+        .commodity-content {
+          flex: 1;
+          margin-left: 40rpx;
+
+          .explain {
+            height: 80rpx;
+            font-size: 28rpx;
+            text-overflow: -o-ellipsis-lastline;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+          }
+
+          .price-cart {
+            height: 25%;
+            display: flex;
+            margin-top: 30rpx;
+            position: relative;
+
+            .price {
+              line-height: 50rpx;
+              color: red;
+            }
+
+            .Cart-box {
+              margin-left: auto;
+              margin-right: 40rpx;
+              color: silver;
+            }
+          }
+
+          .small {
+            font-size: 24rpx;
+            margin-left: auto;
+            color: silver;
+          }
+        }
+      }
+
+    }
+
+    .totalprice-box {
+      width: 100%;
+      height: 100rpx;
+      background-color: white;
+      display: flex;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+
+      .totalprice {
+        width: 240rpx;
+        height: 100rpx;
+        line-height: 100rpx;
+        text-align: center;
+        margin-left: 20rpx;
+
+        text {
+          color: red;
+        }
+      }
+
+      .downorder {
+        margin-left: auto;
+        width: 160rpx;
+        height: 60rpx;
+        background-color: rgb(255, 126, 61);
+        text-align: center;
+        line-height: 60rpx;
+        // margin: 0 auto;
+        margin-top: 20rpx;
+        margin-right: 40rpx;
+        color: white;
+      }
+    }
+  }
+
+  .page-container {
+    .text {
+      margin-top: 40rpx;
+      margin-left: 140rpx;
+      color: silver;
+    }
+    .address-content-box{
+      height: 600rpx;
+      overflow: auto;
+      .address-content{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 40rpx;
+        height: 120rpx;
+        line-height: 60rpx;
+        // background-color: red;
+        display: flex;
+        .content{
+          flex: 5;
+          .name-phone{
+            display: flex;
+            .name{
+              
+            }
+            .phone{
+              margin-left: 20rpx;
+            }
+          }
+          .address{
+            // margin-top: 20rpx;
+            font-size: 26rpx;
+            color: silver;
+          }
+          .default{
+            width: 48rpx;
+            font-size: 24rpx;
+            height: 24rpx;
+            line-height: 24rpx;
+            color: white;
+            background-color: red;
+            padding: 6rpx;
+            border-radius: 12rpx;
+            margin-top: 14rpx;
+            margin-left: 14rpx;
+          }
+        }
+        .cginfo-img{
+          flex: 1;
+          margin-left: auto;
+          text-align: center;
+          // line-height: 120rpx;
+          
+          image{
+            width: 64rpx;
+            height: 64rpx;
+            margin-top: 28rpx;
+          }
+        }
+      }
+    }
+    .determine{
+      width: 40%;
+      height: 60rpx;
+      position: fixed;
+      bottom: 20rpx;
+      left: 400rpx;
+      background-color: red;
+      color: white;
+      line-height: 60rpx;
+      text-align: center;
+      border-radius: 40rpx;
+    }
+    .addAddress {
+      width: 40%;
+      height: 60rpx;
+      position: fixed;
+      bottom: 20rpx;
+      left: 75rpx;
+      background-color: red;
+      color: white;
+      line-height: 60rpx;
+      text-align: center;
+      border-radius: 40rpx;
+    }
+
+  }
+}

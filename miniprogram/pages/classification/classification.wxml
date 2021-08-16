@@ -1,0 +1,25 @@
+<view class="classification">
+  <view class="content">
+    <view class="potion-box">
+      <scroll-view scroll-y='true' scroll-top='{{scrollIndex*80}}rpx'>
+        <view bindtap="switchTab" data-activeindex="{{index}}" class="option {{activeIndex==index?'active':''}}"
+          wx:for="{{allCommodity}}" wx:key='index'>{{item.cat_name}}</view>
+      </scroll-view>
+    </view>
+    <view class="potion-content">
+      <view class="potion-item">
+        <view class="potion"
+          style="width:{{allCommodity[activeIndex].children.length==2?'562':allCommodity[activeIndex].children.length*200}}rpx">
+          <view class="{{index == itemIndex?'active':''}}" bindtap="cgIndexItem" data-acIndex="{{index}}"
+            wx:for="{{allCommodity[activeIndex].children}}" wx:key="index">{{item.cat_name}}</view>
+        </view>
+      </view>
+      <view class="item" bindtap="jumpDetail" data-value="{{item.cat_name}}" data-name="{{item.cat_name}}" wx:for="{{allCommodity[activeIndex].children[itemIndex].children}}" wx:key="index">
+        <view class="img-box">
+          <image src="{{item.cat_icon}}"></image>
+        </view>
+        <text>{{item.cat_name}}</text>
+      </view>
+    </view>
+  </view>
+</view>

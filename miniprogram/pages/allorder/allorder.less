@@ -1,0 +1,170 @@
+.allorder{
+  min-height: 100vh;
+  .nav{
+    width: 100%;
+    height: 80rpx;
+    line-height: 80rpx;
+    text-align: center;
+    position: sticky;
+    left: 0;
+    top: 0;
+    display: flex;
+    background-color: white;
+    z-index: 100;
+    .text{
+      flex: 1;
+    }
+    .active{
+      background-color: #1afa29;
+      color: white;
+    }
+  }
+  .orderInfo{
+    width: 94%;
+    margin: 0 auto;
+   
+    .orderInfo-item{
+      margin-top: 40rpx;
+      background-color: #efecec;
+      padding: 20rpx 18rpx;
+      border-radius: 20rpx;
+      .id-state{
+        width: 100%;
+        height: 60rpx;
+        line-height: 60rpx;
+        text-align: center;
+        display: flex;
+
+        .id{
+          // color: silver;
+          font-size: 26rpx;
+        }
+        .state{
+          margin-left: auto;
+          margin-right: 40rpx;
+          color: silver;
+        }
+        .delete{
+          width: 50rpx;
+          height: 50rpx;
+          margin-left: auto;
+          image{
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      .commodity-box {
+        width: 100%;
+        background-color: white;
+        margin-top: 40rpx;
+        // padding-bottom: 50rpx;
+        background-color: #efecec;
+  
+        .commodity {
+          display: flex;
+          // margin-left: 20rpx;
+          margin-top: 40rpx;
+          
+          .commodity-img {
+            width: 200rpx;
+            height: 200rpx;
+  
+            image {
+              width: 100%;
+              height: 200rpx;
+              border-radius: 30rpx;
+            }
+          }
+  
+          .commodity-content {
+            flex: 1;
+            margin-left: 40rpx;
+            .explain {
+              height: 100rpx;
+              line-height: 50rpx;
+              font-weight: bold;
+              font-size: 28rpx;
+              text-overflow: -o-ellipsis-lastline;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              -webkit-box-orient: vertical;
+            }
+  
+            .price-cart {
+              height: 25%;
+              display: flex;
+              margin-top: 10rpx;
+              position: relative;
+  
+              .price {
+                line-height: 50rpx;
+                color: red;
+              }
+  
+              .Cart-box {
+                margin-left: auto;
+                margin-right: 40rpx;
+                color: silver;
+              }
+            }
+  
+            .small {
+              font-size: 24rpx;
+              margin-left: auto;
+              color: silver;
+            }
+          }
+        }
+  
+      }
+      .time{
+        margin-top: 40rpx;
+      }
+      .addressInfo {
+        width: 100%;
+        margin-top: 40rpx;
+        .name-phone {
+          display: flex;
+          padding-bottom: 10rpx;
+          .phone {
+            margin-left: 20rpx;
+            color: #828282;
+          }
+        }
+
+        .address {
+          color: #828282;
+          margin-top: 20rpx;
+        }
+      }
+      .totalPrice-count-box{
+        margin-top: 40rpx;
+        line-height: 40rpx;
+        display: flex;
+        .totalPrice-count{
+          .totalprice{
+            margin-top: 40rpx;
+            text{
+              color: red;
+            }
+          }
+        }
+        .pay{
+          width: 80rpx;
+          height: 40rpx;
+          border-radius: 10rpx;
+          margin-top: 20rpx;
+          padding: 10rpx;
+          text-align: center;
+          line-height: 40rpx;
+          border: 1px solid silver;
+          margin-left: auto;
+          margin-right: 40rpx;
+        }
+      }
+    }
+  }
+}

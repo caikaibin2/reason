@@ -1,0 +1,71 @@
+<view class="order">
+  <view class="cart-box">
+    <view class="address-box">
+      <view class="text" bindtap="cgisShowPageContainer">选择收货地址></view>
+      <view class="addressInfo">
+        <view class="name-phone">
+          <view class="name">{{address[0].value}}</view>
+          <view class="phone">{{address[1].value}}</view>
+        </view>
+        <view class="address">
+         {{address[2].value + address[3].value}}
+        </view>
+      </view>
+    </view>
+    <view class="commodity-box">
+      <view class="commodity" wx:for="{{cartList}}" wx:key="index">
+        <view class="commodity-img">
+          <image src="{{item.goods_big_logo}} "></image>
+        </view>
+        <view class="commodity-content">
+          <view class="explain">{{item.goods_name}}</view>
+          <view class="price-cart">
+            <view class="price">￥{{item.goods_price}}</view>
+
+            <view class="Cart-box">
+              X{{item.number}}
+            </view>
+          </view>
+          <view class="small">小计:￥{{item.goods_price*item.number}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="totalprice-box">
+      <view class="totalprice">
+        总价:<text>￥{{totalPrice}}</text>
+      </view>
+      <view class="downorder" bindtap="jumppay">
+        支付
+      </view>
+    </view>
+
+  </view>
+  <page-container class="page-container" duration='1000' show="{{isShowPageContainer}}" position='bottom' custom-style="height:60%">
+    <!-- <view class="text" wx:if="{{addressList.length==0}}">没有收货地址，赶紧去添加吧</view> -->
+    <!-- <view class="" wx:if="{{addressList.length != 0}}"> -->
+    <view class="address-content-box">
+      <!-- <view class="address-content" wx:for="{{addressList}}" wx:key="index"> -->
+
+      <radio-group bindchange="radioChange">
+       <view class="address-bigbox">
+        <view class="address-content" wx:for="{{addressList}}" wx:key="index">
+          <view class="content">
+            <view class="name-phone">
+              <view class="name">{{item[0].value}}</view>
+              <view class="phone">{{item[1].value}}</view>
+              <view class="default" wx:if="{{item[5].default}}">默认</view>
+            </view>
+            <view class="address">{{item[2].value + item[3].value}}</view>
+          </view>
+          <view class="cginfo-img">
+            <radio value="{{index}}" color="red" checked="{{index==activeIndex}}"></radio>
+          </view>
+        </view>
+       </view>
+
+      </radio-group>
+    </view>
+    <view class="addAddress" bindtap="addAddress">添加新地址</view>
+    <view class="determine" bindtap="determine">确定</view>
+  </page-container>
+</view>

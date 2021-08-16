@@ -1,0 +1,56 @@
+<view class="allorder">
+  <view class="nav">
+    <view class="text {{activeIndex == index?'active':''}}" data-index="{{index}}" bindtap="cgactive"
+      wx:for="{{typeTextList}}" wx:key="index">{{item.text}}</view>
+  </view>
+  <view class="orderInfo">
+    <view class="orderInfo-item" wx:for="{{showOrder}}" wx:key="index">
+      <view class="id-state">
+        <view class="id">id编号：{{item.id}}</view>
+        <view class="state">{{typeTextList[item.state].text}}</view>
+        <view class="delete" bindtap="deletes" wx:if="{{item.state==0 || item.state ==4}}" data-id="{{item.id}}">
+          <image src="../../images/delete.png"></image>
+        </view>
+      </view>
+      <view class="commodity-box">
+        <view class="commodity" wx:for="{{item.cartList}}" wx:for-item ='v' wx:for-index='i' wx:key="index">
+          <view class="commodity-img">
+            <image src="{{v.goods_big_logo}}"></image>
+          </view>
+          <view class="commodity-content">
+            <view class="explain">{{v.goods_name}}</view>
+            <view class="price-cart">
+              <view class="price">￥{{v.goods_price}}</view>
+
+              <view class="Cart-box">
+                X{{v.number}}
+              </view>
+            </view>
+            <view class="small">小计:￥{{v.goods_price * v.number}}</view>
+          </view>
+        </view>
+        <view class="time">
+          {{item.time}}
+        </view>
+        <view class="addressInfo">
+          <view class="name-phone">
+            <view class="name">{{item.address[0].value}}</view>
+            <view class="phone">{{item.address[1].value}}</view>
+          </view>
+          <view class="address">
+            {{item.address[2].value + ' ' +item.address[3].value}}
+          </view>
+        </view>
+        <view class="totalPrice-count-box">
+          <view class="totalPrice-count">
+            <view class="count">共计{{item.totalCount||10}}件商品</view>
+            <view class="totalprice">合计：<text>￥{{item.totalPrice}}</text></view>
+          </view>
+          <view class="pay" wx:if="{{item.state < 4}}" bindtap="cgState" data-id="{{item.id}}">
+            {{stateTextList[item.state-1 ]}}
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

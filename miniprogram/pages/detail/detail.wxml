@@ -1,0 +1,40 @@
+<view class="detail">
+  <view class="swiper-box">
+    <swiper class="swiper" wx:if="{{detail.pics.length!=0}}" indicator-dots autoplay>
+      <swiper-item class="swiper-item" wx:for="{{detail.pics}}" wx:key='index'>
+        <image src="{{item.pics_big_url?item.pics_big_url:''}}"></image>
+      </swiper-item>
+    </swiper>
+    <view class='noswiper' wx:if="{{detail.pics.length==0}}">
+        图片出问题了，正在维护中，造成的不便请见谅
+    </view>
+  </view>
+  <view class="name-like-price">
+    <view class="name-like">
+      <view class="name">{{detail.goods_name}}</view>
+      <view class="like" bindtap="like">
+        <image src="{{like?'../../images/wjx-active.png':'../../images/wjx.png'}}"></image>
+        <view>{{like?'已收藏':'未收藏'}}</view>
+      </view>
+    </view>
+    <view class="price">
+      <view class="newprice">￥{{detail.goods_price}}</view>
+      <view class="oldprice">￥{{detail.goods_price+300}}</view>
+    </view>
+  </view>
+  <view class="commodity-detail">
+    <view class="text">商品详情</view>
+    <view class="content">
+      <rich-text nodes="{{detail.goods_introduce}}"></rich-text>
+    </view>
+  </view>
+  <view class="option">
+    <view class="cart" bindtap="gocart">
+      <image src="../../images/cart.png"></image>
+      <text>{{cartLength}}</text>
+    </view>
+    <view class="gohome" bindtap="gohome">前往首页</view>
+    <view class="addcart" bindtap="addCart">加入购物车</view>
+    <view class="pay">前往支付</view>
+  </view>
+</view>

@@ -1,0 +1,198 @@
+.cart{
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  .nocart{
+    width: 100%;
+    height: 400rpx;
+    background-color: rgb(245,246,247);
+    // background-color: red;
+    .box{
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      padding-top: 40rpx;
+      image{
+        width: 200rpx;
+        height: 200rpx;
+        
+      }
+      text{
+        display: block;
+        font-size: 32rpx;
+        font-weight: bold;
+        color: silver;
+      }
+    }
+    .guessLike{
+      width: 100%;
+      height: 80rpx;
+      text-align: center;
+      line-height: 80rpx;
+      font-size: 32rpx;
+      border-bottom: 1px silver solid;
+    }
+    .commodity-box{
+      width: 100%;
+      background-color: white;
+      margin-top: 40rpx;
+      .commodity{
+        display: flex;
+        margin-left: 40rpx;
+        margin-top: 40rpx;
+        .commodity-img{
+          width: 200rpx;
+          height: 200rpx;
+          image{
+            width: 100%;
+            height: 200rpx;
+          }
+        }
+        .commodity-content{
+          flex: 1;
+          margin-left: 40rpx;
+          .explain{
+            height: 90rpx;
+            text-overflow: -o-ellipsis-lastline;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+          }
+          .price-cart{
+            height: 25%;
+            display: flex;
+            margin-top: 40rpx;
+            .price{
+              line-height: 50rpx;
+              color: red;
+            }
+            .Cart-box{
+              margin-left: auto;
+              
+              image{
+                width: 50rpx;
+                height: 50rpx;
+              }
+            }
+          }
+        }
+      }
+     
+    }
+  }
+  .cart-box{
+    width: 96vw;
+    margin: 0 auto;
+    .commodity-box{
+      width: 100%;
+      background-color: white;
+      margin-top: 40rpx;
+      padding-bottom: 100rpx;
+      .commodity{
+        display: flex;
+        margin-left: 40rpx;
+        margin-top: 40rpx;
+        .commodity-img{
+          width: 200rpx;
+          height: 200rpx;
+          image{
+            width: 100%;
+            height: 200rpx;
+          }
+        }
+        .commodity-content{
+          flex: 1;
+          margin-left: 40rpx;
+          .explain{
+            height: 80rpx;
+            font-size: 28rpx;
+            text-overflow: -o-ellipsis-lastline;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+          }
+          .price-cart{
+            height: 25%;
+            display: flex;
+            margin-top: 60rpx;
+            position: relative;
+            .price{
+              line-height: 50rpx;
+              color: red;
+            }
+            .computed-box{
+              width: 240rpx;
+              height: 100%;
+              position: absolute;
+              bottom: 0;
+              right: 60rpx;
+              display: flex;
+              view{
+                height: 100%;
+                flex: 1;
+                text-align: center;
+                color: silver;
+                border: 1px solid #1afa29;
+              }
+              .reduce{
+                border-top-left-radius: 50%;
+                border-bottom-left-radius: 50%;
+              }
+              .number{
+                color: rgb(255,126,61);
+              }
+              .add{
+                border-top-right-radius: 50%;
+                border-bottom-right-radius: 50%;
+              }
+            }
+            .Cart-box{
+              margin-left: auto;
+              
+              image{
+                width: 50rpx;
+                height: 50rpx;
+              }
+            }
+          }
+        }
+      }
+     
+    }
+    .totalprice-box{
+      width: 100%;
+      height: 100rpx;
+      background-color: white;
+      display: flex;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      .totalprice{
+        width: 240rpx;
+        height: 100rpx;
+        line-height: 100rpx;
+        text-align: center;
+        margin-left: 20rpx;
+        text{
+          color: red;
+        }
+      }
+      .downorder{
+        margin-left: auto;
+        width: 160rpx;
+        height: 60rpx;
+        background-color:rgb(255,126,61) ;
+        text-align: center;
+        line-height: 60rpx;
+        // margin: 0 auto;
+        margin-top: 20rpx;
+        margin-right: 40rpx;
+        color: white;
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+<view class="cart">
+  <view wx:if="{{cartList.length == 0}}" class="nocart">
+    <view class="box">
+      <image src="../../images/big-cart.png"></image>
+      <text>购物车是空的，请去选择商品吧</text>
+    </view>
+    <view class="guessLike">猜你喜欢</view>
+    <view class="commodity-box">
+      <view class="commodity" wx:for="{{nocartList}}" wx:key="index">
+        <view class="commodity-img">
+          <image src="{{item.goods_big_logo}}"></image>
+        </view>
+        <view class="commodity-content">
+          <view class="explain">{{item.goods_name}}</view>
+          <view class="price-cart">
+            <view class="price">￥{{item.goods_price}}</view>
+            <view class="Cart-box" bindtap="goDetail" data-id="{{item.goods_id}}">
+              <image src="../../images/cart-active.png"></image>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="cart-box" wx:if="{{cartList.length != 0}}">
+    <view class="commodity-box">
+      <view class="commodity" wx:for="{{cartList}}" wx:key="index">
+        <view class="commodity-img">
+          <image src="{{item.goods_big_logo?item.goods_big_logo:'https://img2.baidu.com/it/u=2776240046,4190132182&fm=26&fmt=auto&gp=0.jpg'}} " bindtap="goDetail" data-id="{{item.goods_id}}"></image>
+        </view>
+        <view class="commodity-content">
+          <view class="explain">{{item.goods_name}}</view>
+          <!-- <view class="region">广州</view> -->
+          <view class="price-cart">
+            <view class="price">￥{{item.goods_price}}</view>
+            <view class="computed-box">
+              <view class="reduce" data-index="{{index}}" bindtap="reduceNum">-</view>
+              <view class="number">{{item.number}}</view>
+              <view class="add" data-index="{{index}}" bindtap="addNum">+</view>
+            </view>
+            <view class="Cart-box">
+              <image bindtap="deletes" data-index="{{index}}" src="../../images/delete.png"></image>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="totalprice-box" wx:if="{{cartList.length != 0}}">
+      <view class="totalprice">
+        总价:<text>￥{{totalPrice}}</text>
+      </view>
+      <view class="downorder" bindtap="goPage">
+        下单
+      </view>
+    </view>
+
+  </view>
+</view>

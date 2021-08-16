@@ -1,0 +1,191 @@
+.cart {
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+}
+.cart .nocart {
+  width: 100%;
+  height: 400rpx;
+  background-color: #f5f6f7;
+}
+.cart .nocart .box {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding-top: 40rpx;
+}
+.cart .nocart .box image {
+  width: 200rpx;
+  height: 200rpx;
+}
+.cart .nocart .box text {
+  display: block;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: silver;
+}
+.cart .nocart .guessLike {
+  width: 100%;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 32rpx;
+  border-bottom: 1px silver solid;
+}
+.cart .nocart .commodity-box {
+  width: 100%;
+  background-color: white;
+  margin-top: 40rpx;
+}
+.cart .nocart .commodity-box .commodity {
+  display: flex;
+  margin-left: 40rpx;
+  margin-top: 40rpx;
+}
+.cart .nocart .commodity-box .commodity .commodity-img {
+  width: 200rpx;
+  height: 200rpx;
+}
+.cart .nocart .commodity-box .commodity .commodity-img image {
+  width: 100%;
+  height: 200rpx;
+}
+.cart .nocart .commodity-box .commodity .commodity-content {
+  flex: 1;
+  margin-left: 40rpx;
+}
+.cart .nocart .commodity-box .commodity .commodity-content .explain {
+  height: 90rpx;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.cart .nocart .commodity-box .commodity .commodity-content .price-cart {
+  height: 25%;
+  display: flex;
+  margin-top: 40rpx;
+}
+.cart .nocart .commodity-box .commodity .commodity-content .price-cart .price {
+  line-height: 50rpx;
+  color: red;
+}
+.cart .nocart .commodity-box .commodity .commodity-content .price-cart .Cart-box {
+  margin-left: auto;
+}
+.cart .nocart .commodity-box .commodity .commodity-content .price-cart .Cart-box image {
+  width: 50rpx;
+  height: 50rpx;
+}
+.cart .cart-box {
+  width: 96vw;
+  margin: 0 auto;
+}
+.cart .cart-box .commodity-box {
+  width: 100%;
+  background-color: white;
+  margin-top: 40rpx;
+  padding-bottom: 100rpx;
+}
+.cart .cart-box .commodity-box .commodity {
+  display: flex;
+  margin-left: 40rpx;
+  margin-top: 40rpx;
+}
+.cart .cart-box .commodity-box .commodity .commodity-img {
+  width: 200rpx;
+  height: 200rpx;
+}
+.cart .cart-box .commodity-box .commodity .commodity-img image {
+  width: 100%;
+  height: 200rpx;
+}
+.cart .cart-box .commodity-box .commodity .commodity-content {
+  flex: 1;
+  margin-left: 40rpx;
+}
+.cart .cart-box .commodity-box .commodity .commodity-content .explain {
+  height: 80rpx;
+  font-size: 28rpx;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.cart .cart-box .commodity-box .commodity .commodity-content .price-cart {
+  height: 25%;
+  display: flex;
+  margin-top: 60rpx;
+  position: relative;
+}
+.cart .cart-box .commodity-box .commodity .commodity-content .price-cart .price {
+  line-height: 50rpx;
+  color: red;
+}
+.cart .cart-box .commodity-box .commodity .commodity-content .price-cart .computed-box {
+  width: 240rpx;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 60rpx;
+  display: flex;
+}
+.cart .cart-box .commodity-box .commodity .commodity-content .price-cart .computed-box view {
+  height: 100%;
+  flex: 1;
+  text-align: center;
+  color: silver;
+  border: 1px solid #1afa29;
+}
+.cart .cart-box .commodity-box .commodity .commodity-content .price-cart .computed-box .reduce {
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+.cart .cart-box .commodity-box .commodity .commodity-content .price-cart .computed-box .number {
+  color: #ff7e3d;
+}
+.cart .cart-box .commodity-box .commodity .commodity-content .price-cart .computed-box .add {
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+.cart .cart-box .commodity-box .commodity .commodity-content .price-cart .Cart-box {
+  margin-left: auto;
+}
+.cart .cart-box .commodity-box .commodity .commodity-content .price-cart .Cart-box image {
+  width: 50rpx;
+  height: 50rpx;
+}
+.cart .cart-box .totalprice-box {
+  width: 100%;
+  height: 100rpx;
+  background-color: white;
+  display: flex;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+.cart .cart-box .totalprice-box .totalprice {
+  width: 240rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  margin-left: 20rpx;
+}
+.cart .cart-box .totalprice-box .totalprice text {
+  color: red;
+}
+.cart .cart-box .totalprice-box .downorder {
+  margin-left: auto;
+  width: 160rpx;
+  height: 60rpx;
+  background-color: #ff7e3d;
+  text-align: center;
+  line-height: 60rpx;
+  margin-top: 20rpx;
+  margin-right: 40rpx;
+  color: white;
+}

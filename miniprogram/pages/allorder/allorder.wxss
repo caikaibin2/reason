@@ -1,0 +1,153 @@
+.allorder {
+  min-height: 100vh;
+}
+.allorder .nav {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  position: sticky;
+  left: 0;
+  top: 0;
+  display: flex;
+  background-color: white;
+  z-index: 100;
+}
+.allorder .nav .text {
+  flex: 1;
+}
+.allorder .nav .active {
+  background-color: #1afa29;
+  color: white;
+}
+.allorder .orderInfo {
+  width: 94%;
+  margin: 0 auto;
+}
+.allorder .orderInfo .orderInfo-item {
+  margin-top: 40rpx;
+  background-color: #efecec;
+  padding: 20rpx 18rpx;
+  border-radius: 20rpx;
+}
+.allorder .orderInfo .orderInfo-item .id-state {
+  width: 100%;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  display: flex;
+}
+.allorder .orderInfo .orderInfo-item .id-state .id {
+  font-size: 26rpx;
+}
+.allorder .orderInfo .orderInfo-item .id-state .state {
+  margin-left: auto;
+  margin-right: 40rpx;
+  color: silver;
+}
+.allorder .orderInfo .orderInfo-item .id-state .delete {
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: auto;
+}
+.allorder .orderInfo .orderInfo-item .id-state .delete image {
+  width: 100%;
+  height: 100%;
+}
+.allorder .orderInfo .orderInfo-item .commodity-box {
+  width: 100%;
+  background-color: white;
+  margin-top: 40rpx;
+  background-color: #efecec;
+}
+.allorder .orderInfo .orderInfo-item .commodity-box .commodity {
+  display: flex;
+  margin-top: 40rpx;
+}
+.allorder .orderInfo .orderInfo-item .commodity-box .commodity .commodity-img {
+  width: 200rpx;
+  height: 200rpx;
+}
+.allorder .orderInfo .orderInfo-item .commodity-box .commodity .commodity-img image {
+  width: 100%;
+  height: 200rpx;
+  border-radius: 30rpx;
+}
+.allorder .orderInfo .orderInfo-item .commodity-box .commodity .commodity-content {
+  flex: 1;
+  margin-left: 40rpx;
+}
+.allorder .orderInfo .orderInfo-item .commodity-box .commodity .commodity-content .explain {
+  height: 100rpx;
+  line-height: 50rpx;
+  font-weight: bold;
+  font-size: 28rpx;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.allorder .orderInfo .orderInfo-item .commodity-box .commodity .commodity-content .price-cart {
+  height: 25%;
+  display: flex;
+  margin-top: 10rpx;
+  position: relative;
+}
+.allorder .orderInfo .orderInfo-item .commodity-box .commodity .commodity-content .price-cart .price {
+  line-height: 50rpx;
+  color: red;
+}
+.allorder .orderInfo .orderInfo-item .commodity-box .commodity .commodity-content .price-cart .Cart-box {
+  margin-left: auto;
+  margin-right: 40rpx;
+  color: silver;
+}
+.allorder .orderInfo .orderInfo-item .commodity-box .commodity .commodity-content .small {
+  font-size: 24rpx;
+  margin-left: auto;
+  color: silver;
+}
+.allorder .orderInfo .orderInfo-item .time {
+  margin-top: 40rpx;
+}
+.allorder .orderInfo .orderInfo-item .addressInfo {
+  width: 100%;
+  margin-top: 40rpx;
+}
+.allorder .orderInfo .orderInfo-item .addressInfo .name-phone {
+  display: flex;
+  padding-bottom: 10rpx;
+}
+.allorder .orderInfo .orderInfo-item .addressInfo .name-phone .phone {
+  margin-left: 20rpx;
+  color: #828282;
+}
+.allorder .orderInfo .orderInfo-item .addressInfo .address {
+  color: #828282;
+  margin-top: 20rpx;
+}
+.allorder .orderInfo .orderInfo-item .totalPrice-count-box {
+  margin-top: 40rpx;
+  line-height: 40rpx;
+  display: flex;
+}
+.allorder .orderInfo .orderInfo-item .totalPrice-count-box .totalPrice-count .totalprice {
+  margin-top: 40rpx;
+}
+.allorder .orderInfo .orderInfo-item .totalPrice-count-box .totalPrice-count .totalprice text {
+  color: red;
+}
+.allorder .orderInfo .orderInfo-item .totalPrice-count-box .pay {
+  width: 80rpx;
+  height: 40rpx;
+  border-radius: 10rpx;
+  margin-top: 20rpx;
+  padding: 10rpx;
+  text-align: center;
+  line-height: 40rpx;
+  border: 1px solid silver;
+  margin-left: auto;
+  margin-right: 40rpx;
+}

@@ -1,0 +1,18 @@
+<view class="address-box">
+  <view class="address-content" wx:for="{{addressList}}" wx:key="index">
+      <view class="content">
+        <view class="name-phone">
+          <view class="name">{{item[0].value}}</view>
+          <view class="phone">{{item[1].value}}</view>
+          <view class="default" wx:if="{{item[5].default}}">默认</view>
+        </view>
+        <view class="address">{{item[2].value + item[3].value}}</view>
+      </view>
+      <view class="cginfo-img">
+        <image bindtap="cgaddress" data-index="{{index}}" src="../../images/cgaddress.png"></image>
+      </view>
+  </view>
+  <view class="addaddress" bindtap="jumppage">
+    添加新地址
+  </view>
+</view>

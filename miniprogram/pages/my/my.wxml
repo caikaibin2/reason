@@ -1,0 +1,18 @@
+<view class="my">
+  <view class="portrait-box">
+    <view class="portrait-img">
+      <image src="{{url}}"></image>
+      <text wx:if="{{isshowUser}}">{{name}}</text>
+      <text wx:if="{{!isshowUser}}" bindtap="getInfo">获取头像昵称</text>
+    </view>
+
+    <view class="business-box">
+      <view class="business" bindtap="jumpPage" data-index="{{index}}" wx:for="{{businessList}}" wx:key="index">
+        <view class="text">{{item.name}}</view>
+        <view class="img-box">
+          <image src="../../images/right.png" alt=""></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

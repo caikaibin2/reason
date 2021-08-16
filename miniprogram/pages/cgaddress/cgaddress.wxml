@@ -1,0 +1,26 @@
+<view class="cgaddress">
+  <view class="value-list">
+  
+    <view class="name" wx:for="{{valueList}}" wx:key="index">
+      <text class="text">{{item.text}}</text>
+      <view class="input">
+        <picker mode="region" wx:if="{{index==2}}" value="{{item.value}}" bindchange="picker">
+          <input value="{{item.value}}" bindblur="change" data-index="2" placeholder-style="font-size:24rpx" type="text" confirm-type='go' placeholder="{{item.placeholder}}" />
+        </picker>
+        <input value="{{item.value}}" maxlength="{{index==1?11:-1}}" wx:if="{{index != 2}}" bindblur="change" data-index="{{index}}" placeholder-style="font-size:24rpx" type="text" confirm-type='go' placeholder="{{item.placeholder}}" />
+      </view>
+    </view>
+   
+    <view class="default">
+      <view class="text"  >设为默认收货地址</view>
+      <switch class="switch" checked="{{isdefault}}" bindchange="default" color="red"></switch>
+    </view>
+  </view>
+  <view class="preservation" bindtap="getValues">
+    保存
+  </view>
+  <view class="delete" wx:if="{{index >= 0}}" bindtap="deleteAddress">
+    删除
+  </view>
+
+</view>
