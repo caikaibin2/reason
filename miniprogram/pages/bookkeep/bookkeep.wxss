@@ -1,0 +1,200 @@
+@import "./bookkeep.skeleton.wxss";
+.bookkeep{
+  width: 100vw;
+}
+.bookkeep .background{
+  width: 100%;
+  height: 200rpx;
+  background-color: #1296db;
+}
+.content{
+  width: 90vw;
+  margin: 0 auto;
+  margin-top: -80rpx;
+  background-color: white;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+  padding-top: 20rpx;
+}
+.content .type{
+  width: 200rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  display: flex;
+  margin: 0 auto;
+  border-radius: 30rpx;
+  border: 1px solid #1296db;
+  overflow: hidden;
+}
+.content .type .shouru{
+  text-align: center;
+  flex: 1;
+}
+.content .type .zhichu{
+  flex: 1;
+  text-align: center;
+}
+.bgColor{
+  background-color: #1296db;
+  color: white;
+}
+.swiper-box{
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 40rpx;
+}
+.swiper-box .swiper{
+  height: 330rpx;
+}
+.swiper .swiper-item{
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 10rpx;
+}
+.swiper .swiper-item .swiper-item-box{
+  width: 20%;
+  height: 140rpx;
+}
+.swiper-item-box .img-box{
+  width: 80rpx;
+  height: 80rpx;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+.swiper-item-box .img-box .img-big{
+  transition: all .5;
+  transform: scale(1.2);
+}
+.swiper-item-box .img-box .img{
+  width: 100%;
+}
+.swiper-item-box .img-text{
+  width: 80rpx;
+  height: 30rpx;
+  margin: 0 auto;
+  margin-top: 6rpx;
+  text-align: center;
+  color: silver;
+  font-size: 28rpx;
+}
+.swiper-item-box .text-color{
+  transition: all .5;
+  color: #1296db;
+  font-size: 32rpx;
+}
+.paymethod-text{
+  margin: 40rpx 60rpx;
+  color: silver;
+}
+.paymethod{
+  width: 90%;
+  margin:0 auto;
+  display: flex;
+  justify-content:space-around
+}
+.paymethod .pay{
+  background-color: #dde2e6;
+  padding: 6rpx 16rpx;
+  border-radius: 28rpx;
+  color: #929292;
+  font-size: 28rpx;
+}
+.paymethod .pay.active0{
+  background-color: red;
+  color: white;
+}
+.paymethod .pay.active1{
+  background-color: rgb(18,150,219);
+  color: white;
+}
+.paymethod .pay.active2{
+  background-color: rgb(0,178,106);
+  color: white;
+}
+.paymethod .pay.active3{
+  background-color: #383819;
+  color: white;
+}
+.paymethod .pay.active4{
+  background-color: rgb(183, 0, 255);
+  color: white;
+}
+.date-price-box{
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 40rpx;
+  margin-left: 40rpx;
+}
+.date-price-box .date-box{
+  display: flex;
+ 
+}
+.date-price-box .date-box .date{
+  width: 80rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.date-price-box .date-box .choiceDate{
+  width: calc(100% - 80rpx);
+  height: 60rpx;
+  line-height: 60rpx;
+  margin-left: 20rpx;
+  color: silver;
+}
+.date-price-box .price-box{
+  margin-top: 20rpx;
+  display: flex;
+}
+.date-price-box .price-box .price{
+  width: 80rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.date-price-box .price-box .price-number{
+  width: calc(100% - 80rpx);
+  height: 60rpx;
+  line-height: 60rpx;
+  margin-left: 20rpx;
+}
+.date-price-box .price-box .price-number .ipt{
+  display: block;
+  height: 60rpx;
+}
+.remarks-box {
+  width: 100%;
+  display: flex;
+  margin-top: 20rpx;
+}
+.remarks-box .remarks{
+  width: 80rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.remarks-box  .textarea-box{
+  width: calc(100% - 100rpx);
+  margin-left: 16rpx;
+}
+.remarks-box  .textarea-box .textarea{
+  width: 100%;
+  padding-top: 10rpx;
+}
+.button-box{
+  width: 90%;
+  height: 80rpx;
+  border-radius: 50rpx;
+  text-align: center;
+  line-height: 80rpx;
+  background-color: #1296db;
+  margin: 0 auto;
+  margin-top: 40rpx;
+  color: white;
+  position: relative;
+}
+/* button:not([size='mini']){
+  width: 100% !important;
+  height: 80rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+} */

@@ -1,0 +1,13 @@
+<import src="typeDetails.skeleton.wxml"/>
+<template is="skeleton" wx:if="{{loading}}" />
+<view class="allbookkeep" wx:else>
+  <view class="nav"></view>
+  <view class="item-box">
+    <booking-item 
+    is-date="{{true}}"
+    wx:for="{{allData}}"
+    wx:key="index"
+    detail-infor="{{item}}"
+    ></booking-item>
+  </view>
+</view>

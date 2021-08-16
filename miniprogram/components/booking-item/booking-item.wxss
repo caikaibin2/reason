@@ -1,0 +1,93 @@
+.booking{
+  margin: 0 auto;
+  border-radius: 20rpx;
+  
+}
+.auto-img{
+  width: 100%;
+  display: block;
+
+}
+.booking .item{
+  display: flex;
+  margin: 20rpx 0;
+}
+.booking .item .img-box{
+  width: 80rpx;
+  margin-left: 20rpx;
+}
+.text-box{
+  flex: 1;
+  margin-left: 20rpx;
+}
+.text-box .text{
+  display: flex;
+}
+.text-box .text .canyin{
+  font-weight: bold;
+}
+.datetrue{
+  color: rgb(100, 100, 100);
+  font-size: 24rpx;
+  margin-top: 40rpx;
+  margin-left: 40rpx;
+}
+.text-box .text .pay{
+  font-size: 28rpx;
+  margin-left: 20rpx;
+  line-height: 48rpx;
+  color: white;
+  background-color: rgb(0,178,106);
+  padding: 0 6rpx;
+  border-radius: 28rpx;
+  padding: 0 10rpx;
+}
+.text-box .text .pay.xj{
+  background-color: rgb(255,0,0);
+}
+.text-box .text .pay.zfb{
+  background-color: rgb(18,150,219);
+}
+.text-box .text .pay.wx{
+  background-color: rgb(0,178,106);
+}
+.text-box .text .pay.xyk{
+  background-color: rgb(56,56,25);
+}
+.text-box .text .pay.cxk{
+  background-color: rgb(183,0,255);
+}
+.text-box .text .date{
+  margin-left: 20rpx;
+  font-size: 28rpx;
+  line-height: 50rpx;
+}
+.text-box .text .date.sr,
+.price-box .price.sr
+{
+  color: rgb(0,178,106) ;
+}
+.text-box .text .date.zc,
+.price-box .price.zc{
+  color: rgb(255,0,0) ;
+}
+.text-box .remarks{
+  font-size: 28rpx;
+  color: #777;
+  margin-top: 6rpx;
+}
+.price-box{
+  margin-right: auto;
+  margin-top: 20rpx;
+  display: flex;
+}
+.price-box .price{
+  margin-right: 10rpx;
+  font-weight: bold;
+}
+
+.price-box .delete{
+  width: 40rpx;
+  margin-top: 4rpx;
+  margin-right: 10rpx;
+}

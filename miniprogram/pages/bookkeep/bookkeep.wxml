@@ -1,0 +1,86 @@
+<import src="bookkeep.skeleton.wxml"/>
+<template is="skeleton" wx:if="{{loading}}" />
+<view class="bookkeep"  wx:else>
+  <view class="background"></view>
+  <view class="content">
+    <view class="type"  style="border-color：rgb(238, 232, 232);">
+      <view 
+       class="shouru {{activeIndex==index?'bgColor':''}}"
+       wx:for="{{typelist}}"
+      wx:key="index"
+      data-index="{{index}}"
+      bindtap="switchType"
+      >{{item.title}}
+      </view>
+     
+
+    </view>
+    <view class="swiper-box">
+      <swiper class="swiper" >
+          <swiper-item class="swiper-item" >
+            <view class="swiper-item-box" data-index="{{index}}" bindtap="changeIcon" wx:for="{{typeIcons}}" wx:key="index">
+              <view class="img-box">
+                <image class="img {{index==iconIndex?'img-big':''}}"  src="{{item.icon}}" mode="widthFix"></image>
+              </view>
+              <view class="img-text {{index==iconIndex?'text-color':''}}" >{{item.name}}</view>
+            </view>
+           
+          </swiper-item>
+         
+      </swiper>
+    </view>
+    <view class="paymethod-text">账户选择</view>
+    <!-- 支付方式的选择 -->
+    <view class="paymethod">
+      <view class="pay {{index == payTypeIndex?'active'+index:''}} "data-index="{{index}}" bindtap="changepayTypeIndex"  wx:for="{{payTypelist}}" wx:key="index">{{item.name}}</view>
+      
+    </view>
+    <!-- 选择日期 输入金额 以及备注 -->
+    <view class="date-price-box">
+      <view class="date-box">
+        <view class="date">日期</view>
+        <view class="choiceDate">
+          <picker mode="date" start="2000-09-01" end="{{endDate}}" bindchange="changeDate" value="{{date}}">
+            <view class="picker">
+              {{date}}
+            </view>
+          </picker>
+        </view>
+       
+      </view>
+      <!-- 金额 -->
+      <view class="price-box">
+        <view class="price">金额</view>
+        <view class="price-number">
+          <input type="digit"
+           value="{{price}}" 
+           bindblur="changePriceRemarks" 
+           data-key="price"
+           class="ipt" 
+           placeholder="输入金额" 
+           placeholder-style="color:silver;" />
+        </view>
+        
+      </view>
+      <!-- 备注信息 -->
+      <view class="remarks-box">
+        <view class="remarks">备注</view>
+        <view class="textarea-box">
+          <textarea  class="textarea" 
+          auto-height maxlength="{{30}}" 
+          placeholder="选填项(最多30可写个文字)" 
+          placeholder-style="color:silver;" 
+          bindblur="changePriceRemarks"
+          data-key="remarks"
+          value="{{remarks}}"
+          />
+        </view>
+       
+        
+      </view>
+    </view>
+    <view class="button-box">
+      <view  bindtap="determine">保存</view>
+    </view>
+  </view>
+</view>

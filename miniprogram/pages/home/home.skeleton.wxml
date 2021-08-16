@@ -1,0 +1,183 @@
+<!--
+此文件为开发者工具生成，生成时间: 2021/3/29 上午10:39:03
+使用方法：
+在 E:\粤嵌\安装包\小程序\second\miniprogram\pages\home\home.wxml 引入模板
+
+```
+<import src="home.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}" />
+```
+
+在 E:\粤嵌\安装包\小程序\second\miniprogram\pages\home\home.wxss 中引入样式
+```
+@import "./home.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view class="home">
+      <view class="top">
+        <view class="text sk-transparent sk-text-14-2857-682 sk-text" style="background-position-x: 50%;">本月结余</view>
+        <view class="balance sk-transparent">123564.
+          <text class="point sk-transparent sk-text-14-2857-824 sk-text" style="background-position-x: 50%;">00</text>
+        </view>
+        <view class="zc-sr">
+          <view class="zc-box">
+            <view class="sk-transparent sk-text-14-2857-401 sk-text" style="background-position-x: 50%;">本月支出</view>
+            <view class="price sk-transparent">1,251.
+              <text class="sk-transparent sk-text-14-2857-483 sk-text" style="background-position-x: 50%;">00</text>
+            </view>
+          </view>
+          <view class="sr-box">
+            <view class="sk-transparent sk-text-14-2857-423 sk-text" style="background-position-x: 50%;">本月收入</view>
+            <view class="price sk-transparent">1,251.
+              <text class="sk-transparent sk-text-14-2857-521 sk-text" style="background-position-x: 50%;">00</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="date-bigbox">
+        <view class="date-box">
+          <view class="sk-transparent sk-text-14-2857-992 sk-text">03月25日</view>
+          <view class="zhi-shou sk-transparent">
+            支出：1,200.
+            <text class="sk-transparent sk-text-14-2857-486 sk-text">00</text>
+          </view>
+          <view class="zhi-shou sk-transparent">
+            收入：1,200.
+            <text class="sk-transparent sk-text-14-2857-179 sk-text">00</text>
+          </view>
+        </view>
+        <view class="more">
+          <view class="circle"></view>
+          <view class="circle"></view>
+          <view class="circle"></view>
+          <view class="picker sk-image" end="2050-09-01" mode="date" start="2021-03-25">
+            <view class="sk-transparent sk-text-14-2857-775 sk-text">
+              当前选择
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="components">
+        <view is="components/booking-item/booking-item">
+          <view class="item--booking">
+            <view class="item--item">
+              <view class="item--img-box">
+                <image class="item--auto-img sk-image" mode="widthFix" style="height: 40px;"></image>
+              </view>
+              <view class="item--text-box">
+                <view class="item--text">
+                  <text class="item--canyin sk-transparent sk-text-14-2857-994 sk-text">餐饮</text>
+                  <text class="item--pay sk-transparent sk-text-14-2857-29 sk-text">微信支付</text>
+                  <text class="item--date sk-transparent sk-text-14-2857-731 sk-text">2020-12-12</text>
+                </view>
+                <view class="item--remarks sk-transparent sk-text-14-2857-311 sk-text"> 备注信息</view>
+              </view>
+              <view class="item--price-box">
+                <view class="item--price sk-transparent sk-text-14-2857-14 sk-text">￥12.00</view>
+                <view class="item--delete">
+                  <image class="item--auto-img sk-image" mode="widthFix" style="height: 20px;"></image>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view is="components/booking-item/booking-item">
+          <view class="item--booking">
+            <view class="item--item">
+              <view class="item--img-box">
+                <image class="item--auto-img sk-image" mode="widthFix" style="height: 40px;"></image>
+              </view>
+              <view class="item--text-box">
+                <view class="item--text">
+                  <text class="item--canyin sk-transparent sk-text-14-2857-205 sk-text">餐饮</text>
+                  <text class="item--pay sk-transparent sk-text-14-2857-423 sk-text">微信支付</text>
+                  <text class="item--date sk-transparent sk-text-14-2857-617 sk-text">2020-12-12</text>
+                </view>
+                <view class="item--remarks sk-transparent sk-text-14-2857-564 sk-text"> 备注信息</view>
+              </view>
+              <view class="item--price-box">
+                <view class="item--price sk-transparent sk-text-14-2857-646 sk-text">￥12.00</view>
+                <view class="item--delete">
+                  <image class="item--auto-img sk-image" mode="widthFix" style="height: 20px;"></image>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view is="components/booking-item/booking-item">
+          <view class="item--booking">
+            <view class="item--item">
+              <view class="item--img-box">
+                <image class="item--auto-img sk-image" mode="widthFix" style="height: 40px;"></image>
+              </view>
+              <view class="item--text-box">
+                <view class="item--text">
+                  <text class="item--canyin sk-transparent sk-text-14-2857-4 sk-text">餐饮</text>
+                  <text class="item--pay sk-transparent sk-text-14-2857-325 sk-text">微信支付</text>
+                  <text class="item--date sk-transparent sk-text-14-2857-585 sk-text">2020-12-12</text>
+                </view>
+                <view class="item--remarks sk-transparent sk-text-14-2857-868 sk-text"> 备注信息</view>
+              </view>
+              <view class="item--price-box">
+                <view class="item--price sk-transparent sk-text-14-2857-162 sk-text">￥12.00</view>
+                <view class="item--delete">
+                  <image class="item--auto-img sk-image" mode="widthFix" style="height: 20px;"></image>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view is="components/booking-item/booking-item">
+          <view class="item--booking">
+            <view class="item--item">
+              <view class="item--img-box">
+                <image class="item--auto-img sk-image" mode="widthFix" style="height: 40px;"></image>
+              </view>
+              <view class="item--text-box">
+                <view class="item--text">
+                  <text class="item--canyin sk-transparent sk-text-14-2857-157 sk-text">餐饮</text>
+                  <text class="item--pay sk-transparent sk-text-14-2857-147 sk-text">微信支付</text>
+                  <text class="item--date sk-transparent sk-text-14-2857-201 sk-text">2020-12-12</text>
+                </view>
+                <view class="item--remarks sk-transparent sk-text-14-2857-782 sk-text"> 备注信息</view>
+              </view>
+              <view class="item--price-box">
+                <view class="item--price sk-transparent sk-text-14-2857-860 sk-text">￥12.00</view>
+                <view class="item--delete">
+                  <image class="item--auto-img sk-image" mode="widthFix" style="height: 20px;"></image>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view is="components/booking-item/booking-item">
+          <view class="item--booking">
+            <view class="item--item">
+              <view class="item--img-box">
+                <image class="item--auto-img sk-image" mode="widthFix" style="height: 40px;"></image>
+              </view>
+              <view class="item--text-box">
+                <view class="item--text">
+                  <text class="item--canyin sk-transparent sk-text-14-2857-447 sk-text">餐饮</text>
+                  <text class="item--pay sk-transparent sk-text-14-2857-845 sk-text">微信支付</text>
+                  <text class="item--date sk-transparent sk-text-14-2857-975 sk-text">2020-12-12</text>
+                </view>
+                <view class="item--remarks sk-transparent sk-text-14-2857-941 sk-text"> 备注信息</view>
+              </view>
+              <view class="item--price-box">
+                <view class="item--price sk-transparent sk-text-14-2857-164 sk-text">￥12.00</view>
+                <view class="item--delete">
+                  <image class="item--auto-img sk-image" mode="widthFix" style="height: 20px;"></image>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

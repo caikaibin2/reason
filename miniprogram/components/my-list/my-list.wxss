@@ -1,0 +1,25 @@
+.list-item{
+  width: 90vw;
+  height: 60rpx;
+  line-height: 60rpx;
+  margin: 0 auto;
+  
+}
+.list-item::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.text-name{
+  float: left;
+}
+.icon-box{
+  width: 30rpx;
+  height: 60rpx;
+  margin-top: 4rpx;
+  float: right;
+}
+.img{
+  width: 30rpx;
+  height: 30rpx;
+}

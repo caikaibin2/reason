@@ -1,0 +1,6 @@
+<view class="list-item" bindtap="jumpPage">
+      <view class="text-name">我的记账</view>
+      <view class="icon-box">
+        <image class="img" src="cloud://second-2geob7bl779f27a9.7365-second-2geob7bl779f27a9-1305231295/right/right.png"></image>
+      </view>
+</view>

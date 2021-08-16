@@ -1,0 +1,125 @@
+<!--
+此文件为开发者工具生成，生成时间: 2021/4/1 上午10:43:57
+使用方法：
+在 E:\粤嵌\安装包\小程序\second\miniprogram\pages\bookkeep\bookkeep.wxml 引入模板
+
+```
+<import src="bookkeep.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}" />
+```
+
+在 E:\粤嵌\安装包\小程序\second\miniprogram\pages\bookkeep\bookkeep.wxss 中引入样式
+```
+@import "./bookkeep.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view class="bookkeep">
+      <view class="background"></view>
+      <view class="content">
+        <view class="type" style="border: none;">
+          <view class="shouru"></view>
+        </view>
+        <view class="swiper-box">
+          <swiper class="swiper" current="0" autoplay="false">
+            <swiper-item class="swiper-item" style="position: absolute; width: 100%; height: 100%; transform: translate(0%, 0px) translateZ(0px);">
+              <view class="swiper-item-box">
+                <view class="img-box">
+                  <image class="img sk-image" mode="widthFix"></image>
+                </view>
+                <view class="img-text"></view>
+              </view>
+              <view class="swiper-item-box">
+                <view class="img-box">
+                  <image class="img sk-image" mode="widthFix"></image>
+                </view>
+                <view class="img-text"></view>
+              </view>
+              <view class="swiper-item-box">
+                <view class="img-box">
+                  <image class="img sk-image" mode="widthFix"></image>
+                </view>
+                <view class="img-text"></view>
+              </view>
+              <view class="swiper-item-box">
+                <view class="img-box">
+                  <image class="img sk-image" mode="widthFix"></image>
+                </view>
+                <view class="img-text"></view>
+              </view>
+              <view class="swiper-item-box">
+                <view class="img-box">
+                  <image class="img sk-image" mode="widthFix"></image>
+                </view>
+                <view class="img-text"></view>
+              </view>
+              <view class="swiper-item-box">
+                <view class="img-box">
+                  <image class="img sk-image" mode="widthFix"></image>
+                </view>
+                <view class="img-text"></view>
+              </view>
+              <view class="swiper-item-box">
+                <view class="img-box">
+                  <image class="img sk-image" mode="widthFix"></image>
+                </view>
+                <view class="img-text"></view>
+              </view>
+              <view class="swiper-item-box">
+                <view class="img-box">
+                  <image class="img sk-image" mode="widthFix"></image>
+                </view>
+                <view class="img-text"></view>
+              </view>
+              <view class="swiper-item-box">
+                <view class="img-box">
+                  <image class="img sk-image" mode="widthFix"></image>
+                </view>
+                <view class="img-text"></view>
+              </view>
+              <view class="swiper-item-box">
+                <view class="img-box">
+                  <image class="img sk-image" mode="widthFix"></image>
+                </view>
+                <view class="img-text"></view>
+              </view>
+            </swiper-item>
+          </swiper>
+        </view>
+        <view class="paymethod-text sk-transparent sk-text-14-2857-429 sk-text">账户选择</view>
+        <view class="paymethod">
+          <view class="pay"></view>
+          <view class="pay"></view>
+          <view class="pay"></view>
+          <view class="pay"></view>
+          <view class="pay"></view>
+        </view>
+        <view class="date-price-box">
+          <view class="date-box">
+            <view class="date sk-transparent sk-text-23-3333-735 sk-text">日期</view>
+            <view class="choiceDate">
+              <view mode="date" start="2000-09-01" class="sk-image">
+                <view class="picker"></view>
+              </view>
+            </view>
+          </view>
+          <view class="price-box">
+            <view class="price sk-transparent sk-text-23-3333-158 sk-text">金额</view>
+            <view class="price-number">
+              <view placeholder-style="color:silver;" type="digit" class="sk-image"></view>
+            </view>
+          </view>
+          <view class="remarks-box">
+            <view class="remarks sk-transparent sk-text-23-3333-419 sk-text">备注</view>
+            <view class="textarea-box">
+              <view auto-height="true" class="textarea sk-image" maxlength="30" style="height: 20px;"></view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

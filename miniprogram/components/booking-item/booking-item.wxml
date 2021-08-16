@@ -1,0 +1,23 @@
+<view class="booking" style="{{isDate?'height:146rpx':'height:114rpx'}}">
+  <view class="datetrue" wx:if="isDate">{{detailInfor.date}}</view>
+  <view class="item">
+    <view class="img-box">
+      <image class=".auto-img" mode="widthFix" src="{{detailInfor.typeIcons.icon}}"></image>
+    </view>
+    <view class="text-box">
+      <view class="text">
+        <text class="canyin">{{detailInfor.typeIcons.name}}</text>
+        <text class="pay {{detailInfor.payType.type}}">{{detailInfor.payType.name}}</text>
+       
+        <text class="date  {{detailInfor.type.type}}" >{{detailInfor.type.title}}</text>
+      </view>
+      <view class="remarks">{{detailInfor.remarks || "备注信息：无"}}</view>
+    </view>
+    <view class="price-box">
+      <view class="price {{detailInfor.type.type}}">￥{{detailInfor.price}}</view>
+      <view class="delete" wx:if="{{isDelete}}" bindtap="delete">
+        <image class="auto-img" mode="widthFix" src="../../images/delete.png" ></image>
+      </view>
+    </view>
+  </view>
+</view>

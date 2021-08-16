@@ -1,0 +1,20 @@
+<view class="singleType" bindtap="goPage">
+  <view class="img-box">
+    <image class="img" src="{{detailData.icon}}"></image>
+  </view>
+  <view class="content">
+    <view class="type-price">
+      <view class="type">{{detailData.name}}</view>
+      <view class="price {{detailData.itemList[0].type.type}}">{{detailData.price}}</view>
+    </view>
+    <view class="progress-count">
+      <view class="progress">
+        <view class="zi-progress" style="width:{{(detailData.price/tatilPrice)*100+'%'}};background-color:{{detailData.color}};"></view>
+      </view>
+      <view class="count">{{detailData.count}}笔</view>
+    </view>
+  </view>
+  <view class="right">
+    <image class="right-icon" src="cloud://second-2geob7bl779f27a9.7365-second-2geob7bl779f27a9-1305231295/right/right.png"></image>
+  </view>
+</view>

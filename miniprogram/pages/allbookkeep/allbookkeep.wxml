@@ -1,0 +1,13 @@
+<view class="allbookkeep">
+  <view class="nav"></view>
+  <view class="item-box">
+    <booking-item 
+    is-delete="{{true}}"
+    is-date="{{true}}"
+    wx:for="{{allData}}"
+    wx:key="index"
+    detail-infor="{{item}}"
+    bindupdate="getAllData"
+    ></booking-item>
+  </view>
+</view>

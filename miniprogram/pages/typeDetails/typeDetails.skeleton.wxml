@@ -1,0 +1,102 @@
+<!--
+此文件为开发者工具生成，生成时间: 2021/4/14 上午11:13:12
+使用方法：
+在 E:\粤嵌\安装包\小程序\second\miniprogram\pages\typeDetails\typeDetails.wxml 引入模板
+
+```
+<import src="typeDetails.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}" />
+```
+
+在 E:\粤嵌\安装包\小程序\second\miniprogram\pages\typeDetails\typeDetails.wxss 中引入样式
+```
+@import "./typeDetails.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view class="allbookkeep">
+      <view class="nav"></view>
+      <view class="item-box">
+        <view class="booking" style="height:57px">
+          <view class="datetrue"></view>
+          <view class="item">
+            <view class="img-box">
+              <image class="auto-img sk-image" mode="widthFix"></image>
+            </view>
+            <view class="text-box">
+              <view class="text">
+                <text class="canyin"></text>
+                <text class="pay"></text>
+                <text class="date"></text>
+              </view>
+              <view class="remarks sk-transparent sk-text-14-2857-245 sk-text">备注信息：无</view>
+            </view>
+            <view class="price-box">
+              <view class="price sk-transparent sk-text-14-2857-852 sk-text">￥</view>
+            </view>
+          </view>
+        </view>
+        <view class="booking" style="height:57px">
+          <view class="datetrue"></view>
+          <view class="item">
+            <view class="img-box">
+              <image class="auto-img sk-image" mode="widthFix"></image>
+            </view>
+            <view class="text-box">
+              <view class="text">
+                <text class="canyin"></text>
+                <text class="pay"></text>
+                <text class="date"></text>
+              </view>
+              <view class="remarks sk-transparent sk-text-14-2857-551 sk-text">备注信息：无</view>
+            </view>
+            <view class="price-box">
+              <view class="price sk-transparent sk-text-14-2857-423 sk-text">￥</view>
+            </view>
+          </view>
+        </view>
+        <view class="booking" style="height:57px">
+          <view class="datetrue"></view>
+          <view class="item">
+            <view class="img-box">
+              <image class="auto-img sk-image" mode="widthFix"></image>
+            </view>
+            <view class="text-box">
+              <view class="text">
+                <text class="canyin"></text>
+                <text class="pay"></text>
+                <text class="date"></text>
+              </view>
+              <view class="remarks sk-transparent sk-text-14-2857-182 sk-text">备注信息：无</view>
+            </view>
+            <view class="price-box">
+              <view class="price sk-transparent sk-text-14-2857-678 sk-text">￥</view>
+            </view>
+          </view>
+        </view>
+        <view class="booking" style="height:57px">
+          <view class="datetrue"></view>
+          <view class="item">
+            <view class="img-box">
+              <image class="auto-img sk-image" mode="widthFix"></image>
+            </view>
+            <view class="text-box">
+              <view class="text">
+                <text class="canyin"></text>
+                <text class="pay"></text>
+                <text class="date"></text>
+              </view>
+              <view class="remarks sk-transparent sk-text-14-2857-468 sk-text">备注信息：无</view>
+            </view>
+            <view class="price-box">
+              <view class="price sk-transparent sk-text-14-2857-587 sk-text">￥</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

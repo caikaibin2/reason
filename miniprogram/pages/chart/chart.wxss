@@ -1,0 +1,85 @@
+.chart .nav{
+  width: 100%;
+  height: 120rpx;
+  display: flex;
+  background-color: #1296db;
+  color: silver;
+  font-size: 28rpx;
+}
+.date-box {
+  width: 500rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  background-color: white;
+  margin: auto 0;
+  border-radius: 30rpx;
+  margin-left: 40rpx;
+}
+.date-box .picker{
+  margin-left: 20rpx;
+}
+.query-type{
+  width: 140rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  background-color: white;
+  margin: auto 0;
+  border-radius: 30rpx;
+  text-align: center;
+  margin-left: 20rpx;
+}
+.mouth-typePrice{
+  width: 100%;
+  display: flex;
+}
+.mouth-typePrice .zhichu-box{
+  flex: 1;
+  /* background-color: violet; */
+}
+.mouth-typePrice .zhichu-box .zhichu{
+  text-align: center;
+  width: 250rpx;
+  margin: 0 auto;
+  margin-top: 18rpx;
+  color: silver;
+  padding: 10rpx;
+  border-radius: 20rpx;
+  border: 1px solid silver;
+}
+.mouth-typePrice .zhichu-box .zhichu.sr {
+  border: 1px solid rgb(0,178,106);
+  color: rgb(0,178,106);
+  
+}
+.mouth-typePrice .zhichu-box .zhichu.zc{
+  border: 1px solid red;
+  color: red;
+}
+.ec-canvas {
+  width: 100%;
+  height: 100%;
+}
+.chart-box{
+  width: 100%;
+  /* width: 500rpx; */
+  height: 650rpx;
+  border-radius: 50%;
+  margin: 60rpx auto ;
+  position: relative;
+}
+.notData{
+  position: absolute;
+  top: 120rpx;
+  left: 200rpx;
+  color: silver;
+}
+.singleType-box{
+  margin-top: 20rpx;
+}
+.notData-last{
+  position: absolute;
+  top: 120rpx;
+  left: 280rpx;
+  color: silver;
+}
+

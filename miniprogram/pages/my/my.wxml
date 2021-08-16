@@ -1,18 +1,15 @@
 <view class="my">
-  <view class="portrait-box">
-    <view class="portrait-img">
-      <image src="{{url}}"></image>
-      <text wx:if="{{isshowUser}}">{{name}}</text>
-      <text wx:if="{{!isshowUser}}" bindtap="getInfo">获取头像昵称</text>
+  <view class="top">
+    <view class="img-box" wx:if="{{isshouquan}}">
+      <image class="img" mode="widthFix" src="{{userInfo.avatarUrl}}"></image>
     </view>
-
-    <view class="business-box">
-      <view class="business" bindtap="jumpPage" data-index="{{index}}" wx:for="{{businessList}}" wx:key="index">
-        <view class="text">{{item.name}}</view>
-        <view class="img-box">
-          <image src="../../images/right.png" alt=""></image>
-        </view>
-      </view>
+    <view class="name-text" wx:if="{{isshouquan}}">
+     {{userInfo.nickName}}
     </view>
+    <view class="obtainInfo" wx:if="{{!isshouquan}}" bindtap="obtainInfo">获取用户信息</view>
   </view>
+  <view class="list-box" wx:if="{{isshouquan}}">
+    <my-litem bindjump="jumpPage" ></my-litem>
+  </view>
+  
 </view>

@@ -1,27 +1,22 @@
 {
   "pages": [
+    "pages/chart/chart",
+    "pages/allbookkeep/allbookkeep",
     "pages/home/home",
-    "pages/search/search",
     "pages/my/my",
-    "pages/searchlist/searchlist",
-    "pages/order/order",
-    "pages/allorder/allorder",
-    "pages/address/address",
-    "pages/cgaddress/cgaddress",
-    "pages/cart/cart",
-    "pages/classification/classification",
-    "pages/detail/detail",
-    "pages/index/index"
-    
+    "pages/bookkeep/bookkeep",
+    "pages/typeDetails/typeDetails"
   ],
   "window": {
-    "backgroundColor": "#F6F6F6",
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#ffffff",
-    "navigationBarTitleText": "家当商铺",
+    "navigationBarBackgroundColor": "#1296db",
+    "navigationBarTitleText": "理性消费",
     "navigationBarTextStyle": "black"
   },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
   "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#1296db",
     "list": [
       {
         "pagePath": "pages/home/home",
@@ -30,16 +25,16 @@
         "selectedIconPath": "./images/home-active.png"
       },
       {
-        "pagePath": "pages/classification/classification",
-        "text": "分类",
-        "iconPath": "./images/classification.png",
-        "selectedIconPath": "./images/classification-active.png"
+        "pagePath": "pages/bookkeep/bookkeep",
+        "text": "记账",
+        "iconPath": "./images/jizhang.png",
+        "selectedIconPath": "./images/jizhang-active.png"
       },
       {
-        "pagePath": "pages/cart/cart",
-        "text": "购物车",
-        "iconPath": "./images/cart.png",
-        "selectedIconPath": "./images/cart-active.png"
+        "pagePath": "pages/chart/chart",
+        "text": "统计",
+        "iconPath": "./images/bingtu.png",
+        "selectedIconPath": "./images/bingtu-active.png"
       },
       {
         "pagePath": "pages/my/my",
@@ -48,7 +43,5 @@
         "selectedIconPath": "./images/my-active.png"
       }
     ]
-  },
-  "sitemapLocation": "sitemap.json",
-  "style": "v2"
+  }
 }

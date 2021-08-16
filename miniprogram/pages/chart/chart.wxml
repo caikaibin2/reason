@@ -1,0 +1,51 @@
+
+<view class="chart" >
+  <view class="nav">
+    <view class="date-box">
+      <picker mode="date"
+       bindchange="changeTime"
+       end="{{end}}"
+       >
+        <view class="picker">
+          {{time}}
+        </view>
+      </picker>
+    </view>
+    <view class="query-type" bindtap="changeTypequery">
+      按{{typequeryIndex == 0?"年":typequeryIndex==1?"月":"日"}}查询
+    </view>
+    <view></view>
+  </view>
+  <!-- 月收入和月支出 -->
+  <view class="mouth-typePrice">
+    <view class="zhichu-box" wx:for="{{subType}}" wx:key="index">
+      <view class="zhichu {{index == subTypeIndex?item.type:''}} " data-index="{{index}}" bindtap="changesubType" >
+        <view class="text">{{typequeryIndex == 0?"年":typequeryIndex==1?"月":"日"}}{{item.title}}</view>
+        <view class="mouthPrice">{{item.tatilPrice}}</view>
+      </view>
+    </view>
+    
+    
+  </view>
+  <!-- 图表 -->
+  <view class="chart-box" >
+    <ec-canvas   id="mychart-dom-pie" canvas-id="mychart-pie" ec="{{ ec }}"></ec-canvas>
+    <view class="notData" wx:if="{{subType[subTypeIndex].typeList.length == 0 && time != '选择日期'}}">
+      该{{typequeryIndex == 0?"年":typequeryIndex==1?"月":"日"}}{{typequeryIndex == 0?"年":typequeryIndex==1?"月":"日"}}{{subType[subTypeIndex].title}}没有数据记录
+    </view>
+    <view wx:if="{{time == '选择日期'}}" class="notData-last">
+      请选择日期
+    </view>
+  </view>
+ 
+  <view class="singleType-box">
+    <single-type 
+    wx:for="{{subType[subTypeIndex].typeList}}" 
+    wx:key="index"
+    detail-data="{{item}}"
+    tatil-price="{{subType[subTypeIndex].tatilPrice}}"
+    bindgoPageIds="goPage"
+    ></single-type>
+    
+  </view>
+</view>

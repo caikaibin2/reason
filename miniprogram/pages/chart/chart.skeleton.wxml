@@ -1,0 +1,89 @@
+<!--
+此文件为开发者工具生成，生成时间: 2021/4/5 下午4:32:23
+使用方法：
+在 E:\粤嵌\安装包\小程序\second\miniprogram\pages\chart\chart.wxml 引入模板
+
+```
+<import src="chart.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}" />
+```
+
+在 E:\粤嵌\安装包\小程序\second\miniprogram\pages\chart\chart.wxss 中引入样式
+```
+@import "./chart.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view class="chart">
+      <view class="nav">
+        <view class="date-box">
+          <view mode="date" class="sk-image">
+            <view class="picker sk-transparent sk-text-26-6667-888 sk-text">
+              选择日期
+            </view>
+          </view>
+        </view>
+        <view class="query-type sk-transparent sk-text-26-6667-619 sk-text" style="background-position-x: 50%;">
+          按年查询
+        </view>
+        <view></view>
+      </view>
+      <view class="mouth-typePrice">
+        <view class="zhichu-box">
+          <view class="zhichu zc" style="border: none;">
+            <view class="text sk-transparent sk-text-14-2857-997 sk-text" style="background-position-x: 50%;">支出</view>
+            <view class="mouthPrice sk-transparent sk-text-14-2857-790 sk-text" style="background-position-x: 50%;">00.00</view>
+          </view>
+        </view>
+        <view class="zhichu-box">
+          <view class="zhichu sr" style="border: none;">
+            <view class="text sk-transparent sk-text-14-2857-101 sk-text" style="background-position-x: 50%;">收入</view>
+            <view class="mouthPrice sk-transparent sk-text-14-2857-896 sk-text" style="background-position-x: 50%;">00.00</view>
+          </view>
+        </view>
+      </view>
+      <view class="chart-box"></view>
+      <view class="singleType-box">
+        <view class="singleType">
+          <view class="img-box">
+            <image class="img sk-image"></image>
+          </view>
+          <view class="content">
+            <view class="type-price">
+              <view class="type sk-transparent sk-text-10-0000-730 sk-text">学习</view>
+              <view class="price sk-transparent sk-text-10-0000-917 sk-text">600</view>
+            </view>
+            <view class="progress-count">
+              <view class="progress"></view>
+              <view class="count sk-transparent sk-text-10-0000-134 sk-text">2笔</view>
+            </view>
+          </view>
+          <view class="right">
+            <image class="right-icon sk-image"></image>
+          </view>
+        </view>
+        <view class="singleType">
+          <view class="img-box">
+            <image class="img sk-image"></image>
+          </view>
+          <view class="content">
+            <view class="type-price">
+              <view class="type sk-transparent sk-text-10-0000-209 sk-text">学习</view>
+              <view class="price sk-transparent sk-text-10-0000-337 sk-text">600</view>
+            </view>
+            <view class="progress-count">
+              <view class="progress"></view>
+              <view class="count sk-transparent sk-text-10-0000-163 sk-text">2笔</view>
+            </view>
+          </view>
+          <view class="right">
+            <image class="right-icon sk-image"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>
